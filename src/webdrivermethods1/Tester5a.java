@@ -1,0 +1,23 @@
+package webdrivermethods1;
+
+import org.openqa.selenium.WebDriver.Navigation;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Tester5a {
+
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver" ,"./drivers/chromedriver.exe");
+		ChromeDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.licindia.in/");
+		driver.get("https://www.wikipedia.org/");
+	
+	Navigation navigation =driver.navigate(); 
+	
+	navigation.back();
+	navigation.forward();
+	navigation.refresh();
+	driver.quit();
+	}
+	
+}
